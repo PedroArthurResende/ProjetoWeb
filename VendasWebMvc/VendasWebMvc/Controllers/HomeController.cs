@@ -15,7 +15,16 @@ namespace VendasWebMvc.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Mensagem"] = "Aplicativo web MVC vendas do curso de C#";
+            ViewData["Professor"] = "Nelio Alves";
+            return View();
+
         }
 
         public IActionResult Privacy()
